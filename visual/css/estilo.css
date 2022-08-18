@@ -1,0 +1,192 @@
+/*
+autor: Renan
+data: 05/06/14
+*/
+*{
+	font-family:comic sans ms;
+}
+body{
+	background-color:000000;
+}
+header{
+	width:750px;
+	height:67px;
+	background-color:#6C7B8B;
+	font-size:40px;
+	text-align:center;
+	border:1px solid #000000;
+}
+nav ul{
+	padding:0px;
+	margin:0px;
+}
+nav ul li{
+	display:block;
+	float:left;
+	height:30px;
+	width:186px;
+	background-color:#A2B5CD                                                                                       ;
+	border:1 solid #000000;
+	font-size:20px;
+	text-align:center;
+}
+#tudo{
+	height:645px;
+	width:752px;
+	box-shadow:1px 1px 20px #D1D1DB;
+	border:1 solid #000000;
+	margin:0px auto;
+}
+#corpo{
+	height:512px;
+	width:750px;
+	overflow:auto;
+	background:#D1D1DB;
+	border:1 solid #000000;
+}
+#titulo{
+	text-align:center;
+}
+footer{
+	background:#6C7B8B;
+	height:28px;
+	width:750px;
+	text-align:center;
+	border:1px solid #000000;
+}
+a{
+	color:#000000;
+}
+
+/*Inicio da Mudança de conteudo dentro do website*/
+
+#conteudo{
+	margin-left:5px;
+	margin-top:5px;
+}
+#conteudo h2{
+	margin-left:30px;
+	text-decoration:underline;
+}
+p{
+	color:#8B8970;
+}
+#conteudo h4{
+	color:#8B8970;
+}
+pre{
+	font-family:Courier New;
+	width:752px;	
+}
+/*Apenas arrumando os Exempos do Css*/
+
+#margin{
+	background-color:#157162;
+	height:20px;
+	width:50px;
+	margin-left:10px;
+}
+#margin-grande{
+	background-color:#000000;
+	height:100px;
+	width:100px;
+}
+#background-color{
+	background-color:#FFF8DC;
+}
+#background-imagem{
+	background-image:url("../imagens/mario.jpg");
+	height:170px;
+	width:250px;
+}
+#cor{
+	color:#FF0000;
+	font-family:Courier New;
+}
+#height{
+	background-color:#FF0000;
+	height:150px;
+	width:50px;
+	font-family:Courier New;
+}
+#width{
+	background-color:#FF0000;
+	height:10px;
+	width:250px;
+	font-family:Courier New;
+}
+#float{
+	height:150px;
+	width:50px;
+	background-color:#FF0000;
+	float:right;
+	font-family:Courier New;
+}
+#caixa{
+	height:130px;
+	width:600px;
+	box-shadow:1px 1px 10px #F99D43;
+	font-family:Courier New;
+}
+#padding{
+	height:50px;
+	width:50px;
+	background-color:#FF0000;
+	font-family:Courier New;
+}
+.margin-2{
+	padding:5px 0px 0px 10px;
+	font-family:Courier New;
+}
+#over{
+	height:120px;
+	width:500px;
+	overflow:scroll;
+	font-family:Courier New;
+}
+#text-align{
+	border:2px solid #FF0000;
+	height:70px;
+	width:200px;
+	text-align:right;
+	font-family:Courier New;
+}
+#text-decoration{
+	text-decoration:line-through
+}
+#font-family{
+	font-family:webdings;
+}
+#font-size{
+	font-size:x-large;
+}
+#font-weight{
+	font-weight:bold;
+}
+#font-style{
+	font-style:italic;
+}
+#borda{
+	height:130px;
+	width:510px;
+	border:2px dotted #FF0000;
+	font-family:Courier New;
+}
+table , td, tr, th{
+		border:1px solid #000000;
+		border-collapse:collapse;
+}
+#circulo{
+	height: 130px;
+	width: 130px;
+	border: 2px solid #FF0000;
+	border-radius: 65px;
+	float:left;
+}
+#circulo1{
+	height: 130px;
+	width: 130px;
+	border: 2px solid #FF0000;
+	border-radius: 20px;
+	float:right;
+}

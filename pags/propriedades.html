@@ -1,0 +1,500 @@
+<html>
+	<head>
+		<meta name="author" content="Renan Ponick">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../visual/css/estilo.css">
+		<title>Web Site</title>
+	</head>
+	<body>
+		<div id="tudo">
+			<header>
+				::Website Explicativo::
+			</header>
+				<nav>
+					<ul id="menu">
+						<a href="../index.html">
+							<li>Introdução</li>
+						</a>
+						<a href="tags.html">
+							<li>Html</li>
+						</a>
+						<a href="#">
+							<li>Css</li>
+						</a>
+						<a href="javascript.html">
+							<li>JavaScript</li>
+						</a>
+					</ul>
+				</nav>
+				<div id="corpo">
+					<div id="titulo">
+						<h2>Css</h2>
+					</div>
+					<div id="conteudo">
+						<div>
+							<h2>margin:</h2>
+							<p>Formata os valores da margem.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>length: onde podem ser expresso valores em px exatos(pixels);</li>
+								<li>%: onde podem ser expresso valores em porcentagem aonde varia com a pagina;</li>
+								<li>px: Define um valor em pixels</li>
+								<li>4 valores: 1px 2px 3px 4px(top, rigth, buttom, left)</li>
+								<li> valore: 1px (Geral) </li>
+							</ul>
+							<h4>Exemplo:</h4>
+							<div id="margin-grande">
+									<div id="margin">
+									</div>
+							</div>
+							<pre>
+html->  &lt;div id="exemplo"> &lt;/div>
+css->	#exemplo{
+		margin-left:10px;
+		}
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div id="background-color">
+							<h2>background-color</h2>
+							<p>define uma cor de fundo de um elemento.</p>
+							<h4>Valores:</h4>
+							<ul>
+							<li>cor-#: Define uma cor através do sistema HexaDecimal.</li>
+							<li>rgba - a: Da uma ideia de (OPACITY) transparência.</li>
+							</ul>
+							<h4>Exemplo:</h4>
+<pre>
+html->  &lt;div id="exemplo"> &lt;/div>
+css->	#exemplo{
+		background-color:rgba(255, 248, 220, 1);
+		/* ou background-color:#F0FFF0; */
+		}
+
+</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>background-image </h2>
+							<p>Define uma ou mais imagens de fundo para um elemento.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>url: define o local aonde se encontra a imagem.</li>
+							</ul>
+							<h4>Exemplo:</h4>
+							<div id="background-imagem">
+							TEXTO SOBRE A IMAGEM	
+							IMAGEM DE FUNDO	
+							</div>
+<pre>
+html->  &lt;div id="exemplo"> &lt;/div>
+css->	#exemplo{
+		background-image:url("../imagens/Sid.jpg");
+		height:130px;
+		width:300px;
+		}
+</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>color </h2>
+							<p>define a cor da letra.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>cor-#: Define uma cor através do sistema HexaDecimal.</li>
+								<li>rgba - a: Da uma ideia de (OPACITY) transparência.</li>
+							</ul>
+							<h4>Exemplo:</h4>
+<pre>
+								<div id="cor">
+html->  &lt;div id="exemplo"> &lt;/div>
+css->	#exemplo{
+		color:#FF0000;	/* ou color:rgba(149,157,67, 0.1);*/
+		}
+								</div>
+</pre>
+						</div>
+					
+						<hr />
+						
+						<div>
+							<h2>height</h2>
+							<p>Define a altura de um elemento</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>tamanho- px: Define um valor em pixels ou em % varia com a fixação da tag</li>
+							</ul>
+							<h4>Exemplo:</h4>
+<pre>
+<div id="height">
+</div>
+html->  &lt;div id="exemplo"> &lt;/div>
+css->	#exemplo{
+		background-color:#FF0000;
+		height:150px;
+		width:50px;
+		}
+</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>width </h2>
+							<p>Define a largura de um elemento</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>tamanho- px: Define um valor em pixels ou em % varia com a fixação da tag</li>
+							</ul>
+							<h4>Exemplo:</h4>
+<pre>
+html->  &lt;div id="exemplo"> &lt;/div>
+css->	#exemplo{
+		background-color:#FF0000;
+		height:30px;
+		width:250px;
+		}
+		<div id="width"></div>
+</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>box-shadow </h2>
+							<p>Define a sombra na borda.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>Tamanho da borda(lados), Tamanho da borda(cima,baixo), Tamanho do sombreado: Definido em pixels</li>
+								<li>Cor: Define uma cor, através do sistema HexaDecimal,rgba ou  em ingles.</li>
+							</ul>
+							<h4>Exemplo</h4>
+							<pre>
+								<div id="caixa">
+html->  &lt;div id="exemplo"> &lt;/div>
+css->	#exemplo{
+		box-shadow:1px 1px 10px #F99D43;
+		height:120px;
+		width:600px;
+		}
+								</div>
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>padding</h2>
+							<p>Ajeita a margem de acordo com as coordenadas.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>top:topo  -  right:direita  -  botton:baixo-  left:esquerda;</li>
+							</ul>
+							<pre>
+padding: 5px  0px   0px   10px;
+	 top right botton left(sentido horario);
+							</pre>
+							<h4>Exemplo</h4>
+							<div id="margin-grande" class="margin-2">
+									<div id="padding">
+									</div>
+							</div>
+							<pre>
+#exemplo{
+	padding:5px 0px 0px 10px;
+	}
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>float</h2>
+							<p>Define um modo de flutuação.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>left: esquerda</li>
+								<li>right: direita</li>
+							</ul>
+							<h4>Exemplo:</h4>
+							<pre>
+<div id="float"></div>
+html->  &lt;div id="exemplo"> &lt;/div>
+css->	#exemplo{
+		height:150px;
+		width:50px;
+		background-color:#FF0000;
+		float:right;
+		}
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>overflow</h2>
+							<p>especifica o que acontece se o conteúdo excede a caixa de um elemento(arruma).</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>hidden-Apenas esconde o conteúdo atras da tag caso tenha excedido o tamanho.</li>
+								<li>scroll-Cria duas barras de rolarem _| mesmo que nao sejam necessárias.</li>
+								<li>auto-cria uma barra de rolagem conforme for necessário.</li>
+							</ul>
+							<h4>Exemplo:</h4>
+							<pre>
+								<div id="over">
+html->  &lt;div id="exemplo"> &lt;/div>
+css->	#exemplo{
+		height:500px;
+		width:500px;
+		overflow:scroll;
+		}
+								</div>
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>text-align</h2>
+							<p>especifica o alinhamento horizontal ( _ ) do texto em um elemento.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>left-Define o alinhamento inicial do lado esquerdo.</li>
+								<li>right-Define o alinhamento inicial do lado direito.</li>
+								<li>center-Define o alinhamento inicial no centro.</li>
+								<li>justify-Define o alinhamento exatamente entre o limete dos espaçamentos.</li>
+							</ul>
+							<h4>Exemplo:</h4>
+							<pre>
+html->  &lt;div id="exemplo">
+		TEXTOOOOOO&lt;br />
+		texto&lt;br />
+		TEXtoOO
+		&lt;/div>
+css->	#exemplo{
+		height:70px;
+		width:200px;
+		text-align:right;
+		}
+							</pre>
+								<div id="text-align">
+									TEXTOOOOOO<br />
+									texto<br />
+									TEXtoOO
+								</div>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>text-decoration </h2>
+							<p>especifica a decoração adicionada ao texto.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>none: Sem decoração.</li>
+								<li>overline: Sublinhado em cima.</li>
+								<li>underline: Sublinhado.</li>
+								<li>line-through: Texto riscado no meio.</li>
+							</ul>
+							<h4>Exemplo: </h4>
+							<pre>
+<div id="text-decoration">
+	TEXTOOOOOOOOOO<br />TEXTO
+</div>
+html->&lt;div id="exemplo"> TEXTOOOOOOOOOO &lt;br /> TEXTO &lt;/div&gt;
+css->#exemplo{
+		text-decoration:line-through;
+		}
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>font-family </h2>
+							<p>Especifica o tipo de letra para um elemento.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>Estilo da letra :wingdings , webdings,comic sans ms ,Georgia,Palatino Linotype, Book Antiqua, Times New Roman, Arial,Helvetica, Arial Black, Impact, Lucida Sans Unicode, Tahoma, Verdana, Courier New, Lucida Console, initial.</li>
+								<li>Comece com a fonte que você quer, e depois com uma família genérica, para deixar o navegador escolher uma fonte semelhante na família genérica se não houver outros tipos de letra disponíveis.</li>
+							</ul>
+							<h4>Exemplo:</h4>
+							<div id="font-family">TEXTOOOOOOOOOO<br />TEXTO</div>
+							<pre>
+html->  &lt;div id="exemplo"> TEXTOOOOOOOOOO &lt;br /> TEXTO &lt;/div>
+css->	#exemplo{
+		font-family:webdings;
+		}
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>font-size </h2>
+							<p>Define o tamanho de uma fonte</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>Tamanhos escritos: xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger.</li>
+								<li>Tamanhos em pixels ou %</li>
+							</ul>
+							<h4>Exemplo:</h4>
+							<div id="font-size">TEXTOOOOOOOOOO<br />TEXTO</div>
+							<pre>
+html->  &lt;div id="exemplo"> TEXTOOOOOOOOOO &lt;br /> TEXTO &lt;/div>
+css->	#exemplo{
+		font-size:x-large;
+		}
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>font-weight </h2>
+							<p>Define como as letras devem ser; grossas ou finas.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>Podem ser dados em: normal, bold, bolder, lighter, 100 a 900(100 em 100), initial.</li>
+								<li>A numeração 400 e 700 mudam alguma coisa o resto não.(!VARIA CONFORME O NAVEGADOR!)</li>
+							</ul>
+							<h4>Exemplo:</h4>
+							<div id="font-weight">TEXTOOOOOOOOOO<br />TEXTO</div>
+							<pre>
+html->  &lt;div id="exemplo"> TEXTOOOOOOOOOO &lt;br /> TEXTO &lt;/div>
+css->	#exemplo{
+		font-weight:bold;
+		}
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>font-style</h2>
+							<p>Especifica o estilo da fonte para um texto.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>Tipos: normal, italic, oblique, initial.</li>
+							</ul>
+							<h4>Exemplo:</h4>
+							<div id="font-style">TEXTOOOOOOOOOO<br />TEXTO</div>
+							<pre>
+html->  &lt;div id="exemplo"> TEXTOOOOOOOOOO &lt;br /> TEXTO &lt;/div>
+css->	#exemplo{
+		font-style:italic;
+		}
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>border</h2>
+							<p> Define uma borda para um elemento.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>Espessura- px define o tamanho em pixels.</li>
+								<li>Tipo: solid(solido), dotted(pontilhado) entre outros.</li>
+								<li>Cor: define a cor(#, rgba ou inglês).</li>
+							</ul>
+							<h4>Exemplo:</h4>
+							<pre>
+<div id="borda">
+html->  &lt;div id="exemplo"> &lt;/div>
+css->	#exemplo{
+		height:130px;
+		width:510px;
+		border:2px dotted #FF0000;
+		}
+</div>
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>border-collapse</h2>
+							<p>Define se as bordas da tabela estarão recolhidas em uma única fronteira ou separado como em HTML padrão.</p>
+							<h4>Valores:</h4>
+							<ul>
+								<li>colapse: junta as bordas possíveis de se encontrarem.</li>
+								<li>separate: separa as bordas possíveis de estarem juntas.</li>
+							</ul>
+							<h4>Exemplo: </h4>
+							<pre>
+html->	&lt;table  width='500px'>
+			&lt;tr>
+				&lt;th colspan=2>Exemplo 0&lt;/th>
+			&lt;/tr>
+			&lt;tr>
+				&lt;td>Exemplo: A&lt;/td>
+				&lt;td>Exemplo: B&lt;/td>
+			&lt;/tr>
+		&lt;/table>
+css-> 	table , td, tr, th{
+		border:1px solid #FDFDFD;
+		border-collapse:collapse;
+		}
+<table  width='200px'>
+	<tr>
+		<th colspan="2">Exemplo 0</th>
+	</tr>
+	<tr>
+		<td>Exemplo: A</td>
+		<td>Exemplo: B</td>
+	</tr>
+</table>
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>border-radius</h2>
+							<p>Cria uma borda redonda.</p>
+							<h4>Valores</h4>
+							<ul>
+								<li>Espessura- px: cria um elemento em pixels</li>
+							</ul>
+							<h4>Exemplo</h4>
+							<pre>
+<div id="circulo">
+</div>
+html->  &lt;div id="exemplo"> &lt;/div>
+css->	#exemplo{
+		height: 130px;
+		width: 130px;
+		border: 2px solid #FF0000;
+		border-radius: 65px;
+		}
+<div id="circulo1">
+</div>					
+		html->  &lt;div id="exemplo"> &lt;/div>
+		css->	#exemplo{
+				height: 130px;
+				width: 130px;
+				border: 2px solid #FF0000;
+				border-radius: 20px;
+				}
+							</pre>
+						</div>
+						<hr />
+						<h2>Cor</h2>
+							<h4>Em quaisquer lugar de formatação de cor, as cores podem ser definidas em Hexadecimal , rgba ou pelo nome em !inglês!(!VARIA CONFORME O NAVEGADOR!).</h4>
+						<hr />
+					</div>
+				</div>
+			<footer>
+				&copy; 2014 desenvolvido por Renan Ponick. Todos os direitos reservado.
+			</footer>
+		</div>
+	</body>
+</html>

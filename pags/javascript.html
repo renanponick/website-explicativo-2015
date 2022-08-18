@@ -1,0 +1,764 @@
+<html>
+	<head>
+		<meta name="author" content="Renan Ponick">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../visual/css/estilo.css">
+		<title>Web Site</title>
+		<script>
+			/*function retornaNome(nome){
+			
+				var nomeExiste;
+				
+				if (nome != "")
+					nomeExiste = "Sim";
+				else
+					nomeExiste = "Não";
+					
+				return nomeExiste;
+			}
+			
+			var pedeNome = prompt("Nome?");
+			
+			var nomeRetornado = retornaNome(pedeNome);
+			
+			alert(nomeRetornado);*/
+		</script>
+	</head>
+	<body>
+		<div id="tudo">
+			<header>
+				::Website Explicativo::
+			</header>
+				<nav>
+					<ul id="menu">
+						<a href="../index.html">
+							<li>
+								Introdução
+							</li>
+						</a>
+						<a href="tags.html">
+							<li>
+								Html
+							</li>
+						</a>
+						<a href="propriedades.html">
+							<li>
+								Css
+							</li>
+						</a>
+						<a href="#">
+							<li>
+								JavaScript
+							</li>
+						</a>
+					</ul>
+				</nav>
+				<div id="corpo">
+					<div id="titulo">
+						<h2>JavaScript</h2>
+					</div>
+					<div id="conteudo">
+						<div>
+							<h2>Function</h2>
+							<p>	É um código projetado para executar uma determinada tarefa.<br />
+								A função  pode ser chamada em "qualquer" tag do corpo.</p>
+							<h4>Exemplo:</h4>
+							<pre>
+O código a ser executado pela função é colocado dentro das chaves
+	&lt;head&gt;
+		&lt;script type="text/javascript"&gt;
+		//Inicio de uma função que pode ou não ser executada. 
+		//Os parênteses podem incluir uma lista de nomes de 
+		//parâmetros.  
+		//Parâmetros recebem valores quando a função é chamada//
+			function nome-funcao(){
+		//Conteudo que a função ira executar.
+			CONTEÚDO
+			}
+		&lt;/script&gt;
+	&lt;/head&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Alert</h2>
+							<p>	É utilizado se quiser ter certeza de informação chegue até o usuário.<br />
+								Quando o alerta aparece na tela exibindo uma informação, o usuário terá de clicar em "OK" para prosseguir.</p>
+							<h4>Exemplo:</h4>
+							<button onclick="alerta()">Exemplo</button>
+							<script type="text/javascript">
+							function alerta(){
+								alert("MENSAGEM PRA APARECE NA TELA [: ");
+							}
+							</script>
+							<pre>
+	&lt;head&gt;
+		&lt;script type="text/javascript"&gt;
+			function exemplo(){
+		//Ira executar um alerta para o usuário.
+			alert("MENSAGEM PRA APARECE NA TELA [: ");
+			}
+		&lt;/script&gt;
+	&lt;/head&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Prompt</h2>
+							<p>Exibe uma caixa de diálogo que pede ao visitante algum dado de entrada.</p>
+							<h4>Exemplo:</h4>
+							<button onclick="prompte()">Exemplo</button>
+							<script type="text/javascript">
+							function prompte(){
+								prompt("mensagem aparece na tela, com uma caixa para entrada de dados. [: ");
+							}
+							</script>
+							<pre>
+&lt;head&gt;
+ &lt;script type="text/javascript"&gt;
+  function exemplo(){
+  //Ira executar um alerta com uma caixa de diálogo para o usuário.
+   prompt("mensagem, com uma caixa para entrada de dados. [: ");
+  }
+ &lt;/script&gt;
+&lt;/head&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Var</h2>
+							<p>Inicia uma VARIÁVEL, que pode conter vários tipos de dados, como valores de texto ou números. <br />
+							Variável pode ter nomes curtos (como X e Y) ou nomes mais descritivos (idade, soma, totalVolume)</p>
+							<h4>Exemplo:</h4>
+							<button onclick="variavel()">Exemplo</button>
+							<script type="text/javascript">
+							function variavel(){
+								var x;
+								x=prompt("Valor da variavel x");
+								alert("x = "+x);
+							}
+							</script>
+							<pre>
+	&lt;head&gt;
+		&lt;script type="text/javascript"&gt;
+			function exemplo(){
+		//Ira criar uma variável.
+			var exemplo1 = 1;
+			alert("hehe" +exemplo1);
+			}
+		&lt;/script&gt;
+	&lt;/head&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Os diferentes tipos de Parse</h2>
+							<p>	parseInt-> tenta transformar o valor dentro dos parenteses para um numero inteiro.<br />
+								parseFloat-> tenta transformar em numero real.</p>
+								<button onclick="parsint()">Exemplo ParseInt</button>
+								<button onclick="parsfloat()">Exemplo ParseFloat</button>
+								<script type="text/javascript">
+									function parsint(){
+										var x = parseInt(prompt("Digite um número com ponto"));
+										var y = parseInt(prompt("Digite um número"));
+										var z = (x+y);
+										alert(x+"+"+y+"="+z);
+									}
+									function parsfloat(){
+										var x = parseFloat(prompt("Digite um número com ponto"));
+										var y = parseFloat(prompt("Digite um número"));
+										var z = (x+y);
+										alert(x+"+"+y+"="+z);
+									}
+								</script>
+							<h4>Exemplo:</h4>
+							<pre>
+	&lt;script type="text/javascript"&gt;
+		function exemplo(){
+	//tenta transformar o valor dentro dos parenteses para 
+	//um numero inteiro e savará na variável.
+		var exemplo1 = parseInt(frmexemplo.txtnumero1.value);
+	// tenta transformar em numero real e salvará na variável.
+		var exemplo2 = parseFloat(frmexemplo.txtnumero2.value);
+		}
+	&lt;/script&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Eventos JavaScript</h2>
+							<h3>Evento onLoad</h3>
+							<p>	Executa uma função quando uma página termina de carregar.<br />
+								onload é mais frequentemente usado no elemento &lt;body&gt; para executar um script logo quando a página carrega.</p>
+							<h4>Exemplo:</h4>
+							<pre>
+	&lt;head&gt;
+		&lt;script type="text/javascript"&gt;
+			function exemplo(){
+			alert("EXEMplo");
+			}
+		&lt;/script&gt;
+	&lt;head&gt;
+// body é o que carrega "primeiro" na página então bando o body 
+// for carregado (neste caso) a função ira executar a função.
+	&lt;body onload="exemplo()"&gt;
+	&lt;/body&gt;
+							</pre>
+						</div>
+						<div>
+							<h2>Evento onClick</h2>
+							<p>Executar um JavaScript quando um botão ou elemento é clicado.<br />
+							!!! O atributo onclick pode ser usado em todos os elementos HTML, EXCETO:<br /> &lt;base>, &lt;bdo>, &lt;br>, &lt;head>, &lt;html>, &lt;iframe>, &lt;meta>, &lt;param>, &lt;script>, &lt;style>, e &lt;title>.</p>
+							<h4>Exemplo:</h4>
+							<button onclick="oonclick()">Exemplo</button>
+							<script type="text/javascript">
+								function oonclick(){
+									alert(":] onnn clickk");
+								}
+							</script>
+							<pre>
+	&lt;head&gt;
+		&lt;script type="text/javascript"&gt;\
+	//função do botão abaixo
+			function exemplo(){
+			alert("EXEmplo");
+			}
+		&lt;/script>
+	&lt;head&gt;
+	&lt;head&gt;
+	&lt;body&gt;
+	//Foi criado um botão para melhor visualização,
+	//quando clicado executará a sua função designada.
+		&lt;button onclick="exemplo()">&lt;/button>
+	&lt;/body&gt;
+							</pre>
+						</div>
+						<div>
+							<h2>Evento onSubmit</h2>
+							<p>O evento onsubmit ocorre quando o botão enviar em um formulário é clicado.</p>
+							<h4>Exemplo:</h4>
+							<pre>
+&lt;head&gt;
+//Inicio da checagem, para não passar nada em branco.
+ &lt;script type="text/javascript"&gt;
+  function exemplo(){
+   if(frmexemplo.txtvalor.value==""){
+    alert("O campo valor não foi preenchido.");
+    frmexemplo.txtvalor.focus();
+    return false;
+	}
+ &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+//Criado uma fomulário, que indica para onde e como serão 
+//enviados os dados.
+  &lt;form name="frmcalcula" action="#" method="post" onsubmit="return 
+  exemplo()"&gt;
+//Criado uma tabela
+   &lt;table&gt;
+     &lt;tr&gt;
+	  &lt;td&gt; Valor-1 &lt;/td&gt;
+	  &lt;td&gt; 
+	   &lt;input type="text" name="txtvalor1" size="10"&gt; 
+	  &lt;/td&gt;
+	 &lt;/tr&gt;
+   &lt;/table&gt;
+ &lt;/form&gt;
+&lt;/body&gt;
+//Criado um botão que fará o envio dos formulários
+ &lt;button type="submit">&lt;/button&gt;
+&lt;/body&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>If - Else</h2>
+							<p>	Executar ações diferentes para diferentes decisões.<br />
+								Se tal coisa acontecer faça isso , se não faça aquilo.</p>
+							<button onclick="elseif()">Exemplo</button>
+							<script type="text/javascript">
+							function elseif(){
+								var x=prompt("Escolha apenas 1 ou 2");
+									if(x=="1"){
+										alert("você digitou 1");
+									}else if(x=="2"){
+											alert("você digitou 2");
+										}else if(x==""){
+											alert("você não digitou nada");
+											}else{
+												alert("você digitou outro valor");
+												}
+							}
+							</script>
+							<h4>Exemplo:</h4>
+							<pre>
+&lt;script&gt;
+	function elseif(){
+		var x=prompt("Escolha apenas 1 ou 2");
+	//Inicio da "Checagem" - Se Variável=1 faça.
+		if(x=="1"){
+			alert("Você digitou 1");
+	//Continuação da "Checagem" - Se não Se Variável=2 faça.
+		}else if(x=="2"){
+			alert("Você digitou 2");
+	//Continuação da "Checagem" - Se não Se Variável=(vazio) faça.
+			}else if(x==""){
+				alert("Você não digitou nada");
+	//Fim da "Checagem" - Se Não For nenhuma das opções 
+	//anteriores então faça.
+				}else{
+				   alert("Você digitou outro valor");
+			}
+	}
+&lt;/script&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Switch - Case</h2>
+							<p>	Usado para escolher funções, conforme decisões tomadas pelo usuário.<br />
+								Escolha---caso a escolha for tal coisa faça isso.</p>
+							<h4>Exemplo:</h4>
+							<button onclick="escolha()">Exemplo</button>
+							<script type="text/javascript">
+							function escolha(){
+								var exemplo1 = prompt("digite 1 ou 2");
+								switch (exemplo1) {
+									case "1" :{
+										alert("Digitou 1");
+									}
+									break;
+									case "2" :{
+										alert("Digitou 2");
+									}
+									break;
+									default :{
+										alert("Digitou outra coisa");
+									}
+								}
+							}
+							</script>
+							<pre>
+&lt;head&gt;
+	&lt;script type="text/javascript"&gt;
+		function exemplo(){
+			var exemplo1 = prompt("digite 1 ou 2");
+		//Escolherá(analizará) aquela variável.
+			switch(exemplo){
+			//Caso 1 faça.
+				case "1":{
+					alert("Digitou 1");
+				}
+			//Encerrar Escolha-Caso
+				break;
+			//Caso 2 faça.
+				case "2":{
+					alert("Digitou 2");
+				}
+			//Encerrar Escolha-Caso
+				break;
+			//Caso nenhuma opção anterior faça e depois 
+			//encerrará Escolha-Caso.
+				default{
+					alert("Digitou outra coisa");
+				}
+			}
+		}
+	&lt;/script&gt;
+&lt;/head&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>For</h2>
+							<p>Utilisado caso deseja se executar o mesmo código várias vezes,podendo alterar seu "passo".</p>
+							<h4>Exemplo:</h4>
+							<button onclick="para()">Exemplo</button>
+							<script type="text/javascript">
+								function para(){
+									for (var exemplo = 0; exemplo<5; exemplo++) { 
+										alert(exemplo)
+									}
+								}
+							</script>
+							<pre>
+&lt;head&gt;
+	&lt;script type="text/javascript"&gt;
+		function exemplo(){
+		//Cria uma variável, dita até quando terá que 
+		//realizar tal coisa e o escremento.
+			for (var exemplo = 0; exemplo&lt;5; exemplo++){ 
+			alert(exemplo)
+			}
+		}
+	&lt;/script&gt;
+&lt;/head&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>While</h2>
+							<p> Percorre um bloco de código, desde que uma condição especificada for verdadeira.<br />Verifica e executa</p>
+							<h4>Exemplo:</h4>
+							<button onclick="faca()">Exemplo</button>
+							<script type="text/javascript">
+								function faca(){
+									var exemplo=0
+									while(exemplo<=5) { 
+										alert(exemplo)
+										exemplo++;
+									}
+								}
+							</script>
+							<pre>
+&lt;head&gt;		
+	&lt;script type="text/javascript"&gt;
+		function exemplo(){
+		//Cria uma variável.
+			var exemplo=0
+		//Dita enquanto e "se" terá que realizar tal coisa.
+			while(exemplo &lt;= 5) { 
+				alert("exemplo")
+		//Dita o passo.
+				exemplo++;
+			}
+		}
+	&lt;/script&gt;
+&lt;/head&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Do - While</h2>
+							<p>Este loop irá executar o bloco de código uma vez, antes de verificar se a<br /> 
+							condição for verdadeira, então ele vai repetir o ciclo enquanto a condição é verdadeira.</p>
+							<h4>Exemplo:</h4>
+							<button onclick="enquanto()">Exemplo</button>
+							<script type="text/javascript">
+								function enquanto(){
+									var exemplo=0
+									do{
+										alert(exemplo);
+										exemplo++;
+									}while(exemplo < 5); 
+								}
+							</script>
+							<pre>
+&lt;head&gt;		
+	&lt;script type="text/javascript"&gt;
+		function exemplo(){
+		//Cria uma variável.
+			var exemplo=0
+		//Executa uma vez
+			do{
+				alert(exemplo);
+				//O passo
+				exemplo++;
+		//Verifica se a condição é verdadeira e se verdadeira 
+		//Re-executa e se falsa, finaliza o loop.
+			}while(exemplo &lt; 5); 
+		}
+	&lt;/script&gt;
+&lt;/head&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Formulario.campo.value</h2>
+							<p>Atribui o Valor de um campo que esta em um formulário.</p>
+							<h4>Exemplo:</h4>						
+							<script type="text/javascript">
+								function formulario(){
+									var exemplo=(frmexemplo.txtvalor.value);
+									alert(exemplo)
+								}
+							</script>
+							<form name="frmexemplo" action="#" method="post" onsubmit="return exemplo()">
+								<table>
+									<tr>
+										<td> Valor-1 </td>
+										<td> <input type="text" name="txtvalor" size="10"> </td>
+									</tr>
+									
+								</table>
+							</form>
+							<button onclick="formulario()">Enviar</button>	
+							<pre>
+&lt;head&gt;	
+ &lt;script type="text/javascript"&gt;
+  function exemplo(){
+  //Atribuirá o valor do formulario encontrado em um lugar dele.
+    var exemplo=(frmexemplo.txtvalor.value);
+	}
+ &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+//Cria um formulário.
+&lt;form name="frmexemplo" action="#" method="post" onsubmit="return 
+exemplo()"&gt;
+//Cria uma tabela.
+   &lt;table&gt;
+     &lt;tr&gt;
+	  &lt;td&gt; Valor-1 &lt;/td&gt;
+	  //Lugar do valor(Neste caso.)
+	  &lt;td&gt; 
+	   &lt;input type="text" name="txtvalor" size="10"&gt;
+	  &lt;/td&gt;
+	 &lt;/tr&gt;
+   &lt;/table&gt;
+ &lt;/form&gt;
+&lt;/body&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Função document.getElementById()</h2>
+							<p>	Significa .pegarElementoPeloId --- Retorna o elemento com o ID especificado.<br />
+								É usado quase todas as vezes que você deseja manipular, ou obter informações a partir de, um elemento em seu documento.<br />
+								É acompanhado pelo local onde se encontra a informação</p>
+							<h4>Exemplo:Clique na Imagem</h4>
+							<script type="text/javascript">
+								var x=0
+								function elemento(){
+									if(x=="0"){
+									document.getElementById("imagem").src="../visual/imagens/Sid.jpg";
+									x=1;
+									}else if(x=="1"){
+										document.getElementById("imagem").src="../visual/imagens/mario.jpg";
+										x=0;
+										}
+									if(x=="1"){
+									document.getElementById("pessoa").src="../visual/imagens/pessoa.jpg";
+									}else if(x=="0"){
+										document.getElementById("pessoa").src="../visual/imagens/pessoafeliz.jpg";
+										}
+								}
+							</script>
+								<img src="../visual/imagens/Sid.jpg" id="imagem" onclick="elemento(0)"/>
+								<img src="../visual/imagens/pessoa.jpg" id="pessoa" onclick="elemento(1)"/>
+							<pre>
+&lt;head&gt;
+ &lt;script type="text/javascript"&gt;
+ var x=0
+  	function elemento(){
+	//Analiza a situação
+		if(x=="0"){
+	//Caso verdadeira chamará o que foi solicitado para a "tela".
+		  document.getElementById("imagem").src="../visual/imagens/Sid.jpg";
+		  x=1;
+	//Analiza novamente a situação caso a anterior não for verdade
+		}else if(x=="1"){
+	//Caso verdadeira chamará o que foi solicitado para a "tela".
+		  document.getElementById("imagem").src="../visual/imagens/mario.jpg";
+		  x=0;
+		}
+	}
+	&lt;/script&gt;
+&lt;/head&gt;
+
+		
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Função toUpperCase()</h2>
+							<p>Tenta converter a string(value) em letras maiúsculas.</p>
+							<h4>Exemplo:</h4>
+							<button onclick="maiusculo()">Exemplo</button>
+							<script type="text/javascript">
+								function maiusculo(){
+									var exemplo = prompt("Digite uma letra ou frase com letra MINUSCULA.").toUpperCase();
+									alert(exemplo);
+								}
+							</script>
+							<pre>
+&lt;head&gt;		
+	&lt;script type="text/javascript"&gt;
+	//Cria uma variavel, chama um prompt que arquivará o 
+	//que foi digitado, em Maiusculo, dentro da variavel.
+			var exemplo = prompt("A ou B?").toUpperCase();
+	&lt;/script&gt;
+&lt;/head&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Função focus()</h2>
+							<p>Quando um campo de entrada recebe o foco, ou seja, o cursor vai direto para o campo selecionado.</p>
+							<h4>Exemplo:</h4>
+							<script type="text/javascript">
+								function focar(){
+									alert("Seu cursor irá para o Exemplo-2");
+									frmexemplo2.txtexemplo2.focus();
+								}
+							</script>
+							<form name="frmexemplo2" action="#" method="post">
+								<table>
+									<tr>
+										<td> Exemplo-1 </td>
+										<td> <input type="text" name="txtexemplo" size="10"> </td>
+									</tr>
+									<tr>
+										<td> Exemplo-2 </td>
+										<td> <input type="text" name="txtexemplo2" size="10"> </td>
+									</tr>
+								</table>
+							</form>
+							<button onclick="focar()">Enviar</button>
+							<pre>
+&lt;head&gt;		
+	&lt;script type="text/javascript"&gt;
+	function exemplo(){
+	//Jogará o cursor para o local solicitado.
+		frmexemplo2.txtexemplo2.focus();
+	}
+	&lt;/script&gt;
+&lt;/head&gt;
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Return</h2>
+							<p>Quando instrução de retorno , a função irá parar a execução<br /> e valor de retorno retornará ao "chamador".</p>
+							<h4>Exemplo:</h4>
+							<pre>
+&lt;head&gt;		
+	&lt;script type="text/javascript"&gt;
+		function exemplo(){
+		//Verifica.
+			if(frmexemplo.txtvalor.value=="1"){
+			//Se verdade, NESTE CASO, iria retornar 
+			//para redigitar(arrumar)o valor no local 
+			//da txtvalor ate não ser 1
+				return false;
+			 }
+	&lt;/script&gt;
+&lt;/head&gt;
+	
+ 
+
+							</pre>
+						</div>
+						
+						<hr />
+						
+						<div>
+							<h2>Validação do preenchimento de um formulário</h2>
+							<p><h4>Por etapas:</h4></p>
+							<script type="text/javascript">
+							function validar(){
+								if(frmnumero2.txtnumero.value==""){
+									alert("O campo Número-1 não foi preenchido.");
+									alert("Seu cursor irá para o Número-1");
+									frmnumero2.txtnumero.focus();
+									return false;
+									}else if(frmnumero2.selescolha.value=="0"){
+											alert("O campo Escolha sexo não foi selecionado.");
+											alert("Seu cursor irá para o Escolha Sexo");
+											frmnumero2.selescolha.focus();
+											return false;
+										}else if(frmnumero2.rdnumero.value==""){
+												alert("O campo Número não foi selecionado.");
+												return false;
+											}
+							}
+							</script>
+							<form name="frmnumero2" action="#" method="post">
+								<table>
+									<tr>
+										<td> Número-1 </td>
+										<td> <input type="text" name="txtnumero" size="10"> </td>
+									</tr>
+									<tr>
+										<td> Escolha Sexo </td>
+										<td>
+											<select name="selescolha">
+											<option value="0">--Escolha--</option>
+											<option value="1">--Masculino--</option>
+											<option value="2">--Feminino--</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td> Números </td>
+										<td>
+											<input type="radio" name="rdnumero" value="1"> 1
+											<input type="radio" name="rdnumero" value="2"> 2
+											<input type="radio" name="rdnumero" value="3"> 3
+										</td>
+									</tr>
+								</table>
+							</form>
+							<button onclick="validar()">Enviar</button>
+							<pre>
+&lt;head&gt;	
+ &lt;script type="text/javascript"&gt;
+  function exemplo(){
+  //Inicia a checagem(SE), indica o local(Parentêses) e compara com
+  //um valor vazio(=="").
+   if(frmexemplo.txtvalor.value==""){
+  //Informa o erro(Não preenchimento).
+    alert("O campo valor não foi preenchido.");
+  //Informa o local do erro. Colocando o cursor aonde é necessário.
+    frmexemplo.txtvalor.focus();
+  //Retorna.
+    return false;
+	}
+ &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;form name="frmcalcula" action="#" method="post" 
+onsubmit="return exemplo()"&gt;
+   &lt;table&gt;
+     &lt;tr
+	  &lt;td&gt; Valor-1 &lt;/td&gt;
+	  &lt;td&gt; &lt;input type="text" name="txtvalor1" 
+	  size="10"&gt; &lt;/td&gt;
+	 &lt;/tr&gt;
+   &lt;/table&gt;
+ &lt;/form&gt;
+&lt;/body&gt;
+
+OBS:No exemplo acima foi utilizado Select e Radio.
+    A maneira como é organizado a validação é a mesma,
+    só mudam os nomes dos campos.
+							</pre>
+						</div>
+					</div>
+				</div>
+			<footer>
+				&copy; 2014 desenvolvido por Renan Ponick. Todos os direitos reservado.
+			</footer>
+		</div>
+	</body>
+</html>
